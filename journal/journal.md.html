@@ -2,6 +2,14 @@
                  **Development Journal**
 
 
+2018-06-16: G3D Starter Project
+=====================================================
+
+I thought it might be useful to create a G3D starter project similar to the one provided by G3D, but avoiding step 5 from the [recommended G3D configure and build](https://casual-effects.com/g3d/G3D10/readme.md.html?#toc3.2), which tells you to "Set the system-wide VC Directories in the text file  `%homedrive%%homepath%\AppData\Local\Microsoft\MSBuild\v4.0\Microsoft.Cpp.x64.user.props`". Given than system-wide settings scare many people, I thought a more friendly approach would be to do the same with the vcxproj, thereby giving me a safe place to start future G3D-based projects.
+
+The gist of the fix is to apply the change in [commit e1a78a0a0](https://github.com/jspjut/g3d-starter/commit/e1a78a0a012d021bf24d03513d681c1e62f61330) from this repository. Everything else in this repository is basically a copy of the G3D starter without the doxygen stuff since we don't generally need it for quick tests.
+
+
 2016-08-12: Formatting Notes
 =====================================================
 
